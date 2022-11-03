@@ -12,7 +12,7 @@ class BankAccount(object):
     print ("Balance: $%.2f" % self.balance)
     return 
 
- #Deposit functionality that show balance with two decimals.
+#Deposit functionality that show balance with two decimals.
   def deposit(self, amount):
     if amount <= 0:
       print ("You entered wrong amount")
