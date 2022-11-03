@@ -1,6 +1,6 @@
 class BankAccount(object):
   balance = 0
-#To add a name to the acct.  
+#To add a name to the acct. This will ensure that whatever name is typed when creating a class is atributed to that object.  
   def __init__(self, name):
     self.name = name
 
@@ -12,6 +12,7 @@ class BankAccount(object):
     print ("Balance: $%.2f" % self.balance)
     return 
 
+ #Deposit functionality that show balance with two decimals.
   def deposit(self, amount):
     if amount <= 0:
       print ("You entered wrong amount")
@@ -21,7 +22,7 @@ class BankAccount(object):
       self.balance  += amount 
       self.show_balance()
 
-#Withdraw funtionality
+#Withdraw functionality that show balance with two decimals.
   def withdraw(self, amount):
     if amount > self.balance:
       print ("No enough balance in your acct for this withdraw")
